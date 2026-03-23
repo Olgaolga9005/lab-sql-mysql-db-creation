@@ -1,10 +1,10 @@
-INSERT INTO cars (id, vin, manufacturer, model, year, color)
+INSERT INTO cars (vin, manufacturer, model, year, color)
 VALUES 
-(1, '3K096I98581DHSNUP', 'Volkswagen', 'Tiguan', 2019, 'Blue'),
-(2, 'ZM8G7BEUQZ97IH46V', 'Peugeot', 'Rifter', 2019, 'Red'),
-(3, 'RKXVNNIHLVVZOUB4M', 'Ford', 'Fusion', 2018, 'White'),
-(4, 'HKNDGS7CU31E9Z7JW', 'Toyota', 'RAV4', 2018, 'Silver'),
-(5, 'DAM41UDN3CHU2WVF6', 'Volvo', 'V60', 2019, 'Gray');
+('3K096I98581DHSNUP', 'Volkswagen', 'Tiguan', 2019, 'Blue'),
+('ZM8G7BEUQZ97IH46V', 'Peugeot', 'Rifter', 2019, 'Red'),
+('RKXVNNIHLVVZOUB4M', 'Ford', 'Fusion', 2018, 'White'),
+('HKNDGS7CU31E9Z7JW', 'Toyota', 'RAV4', 2018, 'Silver'),
+('DAM41UDN3CHU2WVF6', 'Volvo', 'V60', 2019, 'Gray');
 
 INSERT INTO customers 
 (customer_id, name, phone, email, address, city, state, country, zip_code)
@@ -33,3 +33,6 @@ VALUES
 SELECT id, name FROM customers;
 SELECT id, name FROM sales;
 SELECT id, model FROM cars;
+
+SELECT *
+FROM cars;
